@@ -1,0 +1,34 @@
+---
+
+name:
+    type: input
+    message: What is your name?
+    default: Geometry Labs Inc.
+
+email:
+    type: input
+    message: What is your email?
+    default: info@geometry-labs.com
+
+github_username:
+    type: input
+    message: What is your github username / org?
+    default: geometry-labs
+
+project_name:
+    type: input
+    message: What is the name of your project
+
+project_slug:
+    type: input
+    message: What is the name of your project
+    default: "{{ project_name.lower().replace(' ', '_').replace('-', '_') }}"
+
+project_short_description:
+    type: input
+    message: Type a short description of your project
+
+version:
+    type: input
+    message: What is the initial version of your project?
+    default: 0.1.0
