@@ -1,0 +1,7 @@
+pytest-cov
+flake8
+tox
+coverage
+pytest
+black
+
