@@ -17,12 +17,17 @@ github_username:
 
 project_name:
     type: input
-    message: What is the name of your project
+    message: What is the name of your project?
 
 project_slug:
     type: input
-    message: What is the name of your project
+    message: What is the name of your package?
     default: "{{ project_name.lower().replace(' ', '_').replace('-', '_') }}"
+
+repo_name:
+    type: input
+    message: What is the name of your repo?
+    default: "{{ project_name.lower().replace(' ', '-') }}"
 
 project_short_description:
     type: input

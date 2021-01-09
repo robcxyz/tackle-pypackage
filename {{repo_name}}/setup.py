@@ -37,7 +37,7 @@ def get_version(rel_path):
         raise RuntimeError("Unable to find version string.")
 
 setup(
-    version=get_version(os.path.join('app', '__init__.py')),
+    version=get_version(os.path.join('{{project_slug}}', '__init__.py')),
     author="{{name}}",
     author_email='{{email}}',
     python_requires='>=3.5',
@@ -55,7 +55,7 @@ setup(
     description="{{project_short_description}}",
     entry_points={
         'console_scripts': [
-            '{{project_slug}}=app.main:main',
+            '{{project_slug}}={{project_slug}}.main:main',
         ],
     },
     install_requires=requirements,
