@@ -2,8 +2,8 @@
 import sys
 import os
 
-from app import __version__
-from app.config import Config
+from {{project_slug}} import __version__
+from {{project_slug}}.config import Config
 import yaml
 
 import click

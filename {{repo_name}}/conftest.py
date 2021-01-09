@@ -1,7 +1,7 @@
 """Fixtures."""
 import os
 from click.testing import CliRunner
-from app.main import main
+from {{project_slug}}.main import main
 import pytest
 
 

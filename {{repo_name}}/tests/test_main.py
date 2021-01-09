@@ -2,9 +2,10 @@
 
 """Tests for `this` package."""
 import os
-
-from app.main import main
 import pytest
+
+from {{project_slug}}.main import main
+from {{project_slug}} import __version__
 
 
 @pytest.fixture
@@ -25,7 +26,6 @@ def test_command_line_interface(cli_runner):
 
 
 def test_cli_version(cli_runner):
-    from app import __version__
     result = cli_runner("--version")
     assert result.exit_code == 0
     assert __version__ in result.stdout

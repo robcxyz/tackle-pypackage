@@ -3,11 +3,11 @@
 ==================
 
 
-.. image:: https://img.shields.io/pypi/v/{{project_slug}}.svg
-        :target: https://pypi.python.org/pypi/{{project_slug}}
+.. image:: https://img.shields.io/pypi/v/{{repo_name}}.svg
+        :target: https://pypi.python.org/pypi/{{repo_name}}
 
-.. image:: https://img.shields.io/travis/{{github_username}}/{{project_slug}}.svg
-        :target: https://travis-ci.com/{{github_username}}/{{project_slug}}
+.. image:: https://img.shields.io/travis/{{github_username}}/{{repo_name}}.svg
+        :target: https://travis-ci.com/{{github_username}}/{{repo_name}}
 
 .. image:: https://readthedocs.org/projects/python-boilerplate/badge/?version=latest
         :target: https://python-boilerplate.readthedocs.io/en/latest/?badge=latest
